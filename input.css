@@ -1,0 +1,139 @@
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.input-container {
+    line-height: 44px;
+    border-color: #ededed;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    position: relative;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.input-label {
+    color: #000;
+    font-style: normal;
+    font-weight: 400;
+    width: 90px;
+    float: left;
+}
+
+.input-bar {
+    overflow: hidden;
+    padding-right: 5px;
+    position: relative;
+}
+
+.input-input {
+    -webkit-appearance: none;
+    border-radius: 0;
+    font-size: 100%;
+    width: 100%;
+    height: 42px;
+    border: 0;
+    background: transparent;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: Arial;
+}
+
+.input-clear {
+    display: none;
+    position: absolute;
+    z-index: 20;
+    top: 0!important;
+    right: 0!important;
+    width: 40px;
+    height: 100%;
+}
+
+.input-clear span {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 30px;
+    top: 50%!important;
+    left: 50%;
+    margin: -8px 0 0 -8px;
+    background: #e0e0e0;
+}
+
+.input-clear span:before,
+.input-clear span:after {
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 7px;
+    width: 2px;
+    height: 8px;
+    background: #fff;
+}
+
+.input-clear span:before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.input-clear span:after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.input-fake {
+    position: absolute;
+    z-index: 10;
+    height: 42px;
+    left: -2px;/*for cursor in middle*/
+    top: 0;
+    line-height: 42px;
+    color: transparent;
+    font-family: Arial;
+}
+
+.input-cursor {
+    position: absolute;
+    top: -1px;/*for cursor offset*/
+    color: rgba(0, 0, 0, 1);
+    animation: twinkle 2s infinite;
+    -webkit-animation: twinkle 2s infinite;
+}
+
+.twinkle {
+    animation: twinkle 1s;
+    -webkit-animation: twinkle 1s;
+}
+
+@-webkit-keyframes twinkle {
+    0%,
+    100%,
+    50% {
+        opacity: 1
+    }
+    25%,
+    75% {
+        opacity: 0
+    }
+}
+
+@-o-keyframes twinkle {
+    0%,
+    100%,
+    50% {
+        opacity: 1
+    }
+    25%,
+    75% {
+        opacity: 0
+    }
+}

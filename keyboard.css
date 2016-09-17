@@ -1,0 +1,84 @@
+/*弹出键盘样式*/
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.keyboard-container {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: #fff
+}
+
+.keyboard-bar {
+    background: #efefef;
+    border-top: 1px solid #bababa;
+    padding-right: 10px;
+    height: 44px;
+    line-height: 44px;
+}
+
+.keyboard-bar .keyboard-btn-ok {
+    padding: 0;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: orangered;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 1px;
+    margin-top: 7px;
+    float: right;
+}
+
+.keyboard-list {
+    font-size: 27px;
+}
+
+.keyboard-list li {
+    float: left;
+    width: 33%;
+    line-height: 54px;
+    text-align: center;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #aaa;
+    border-width: 1px 1px 0 0;
+    background-color: #fff;
+}
+
+.keyboard-list li:active {
+    background-color: #d1d4db;
+}
+
+.keyboard-list li:nth-of-type(3n+3) {
+    width: 34%;
+    border-right: none
+}
+
+.keyboard-list li:last-of-type {
+    background-color: #d1d4db;
+}
+
+.keyboard-list li:last-of-type:active {
+    background: #fff;
+}
+
+.keyboard-icon-del {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(backspace.png) no-repeat;
+    background-size: 24px 24px;
+    background-position: 0px 0px;
+}
+
