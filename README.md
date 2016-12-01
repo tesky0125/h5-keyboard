@@ -21,5 +21,5 @@ Native键盘弹起遮盖input导致无法输入
 
 ## demos
 
-![keyboard](https://github.com/tesky0125/blog/blob/gh-pages/images/gif/keyboard.gif)
-![keyboard-2](https://github.com/tesky0125/blog/blob/gh-pages/images/gif/keyboard-2.gif)
+![keyboard](https://github.com/tesky0125/tesky0125.github.io/tree/master/backup/images/gif/keyboard.gif)
+![keyboard-2](https://github.com/tesky0125/tesky0125.github.io/tree/master/backup/images/gif/keyboard-2.gif)
